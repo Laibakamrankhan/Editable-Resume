@@ -8,7 +8,7 @@ form.addEventListener("submit", function (event) {
     var education = document.getElementById("education").value;
     var experince = document.getElementById("experience").value;
     var skill = document.getElementById("skill").value;
-    var resumeHTML = "\n    <h2>Resume</h2>\n    <h3>Personal Information</h3>\n    <p><b>Name:</b>".concat(name, "</p>\n    <p><b>E-mail:</b>").concat(email, "</p>\n    <p><b>Contact:</b>").concat(phone, "</p>\n    <h3>Education</h3>\n    <p>").concat(education, "</p>\n     <h3>Experience</h3>\n    <p>").concat(experince, "</p>\n     <h3>Skills</h3>\n    <p>").concat(skill, "</p>");
+    var resumeHTML = "\n    <h2>Editable Resume</h2>\n    <h3>Personal Information</h3>\n    <p><b>Name:</b><span contenteditable=\"true\">".concat(name, "</span></p>\n    <p><b>E-mail:</b><span contenteditable=\"true\">").concat(email, "</span></p>\n    <p><b>Contact:</b><span contenteditable=\"true\">").concat(phone, "</span></p>\n    <h3>Education</h3>\n    <p <span contenteditable=\"true\">").concat(education, "</p>\n     <h3>Experience</h3>\n    <p <span contenteditable=\"true\">").concat(experince, "</p>\n     <h3>Skills</h3>\n    <p <span contenteditable=\"true\">").concat(skill, "</p>");
     if (resumeDispalyElement) {
         resumeDispalyElement.innerHTML = resumeHTML;
     }
